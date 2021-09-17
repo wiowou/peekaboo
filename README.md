@@ -1,3 +1,3 @@
-# Getting Started with Create React App
+# Peekaboo
 
 A React Challenge
