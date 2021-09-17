@@ -1,11 +1,16 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 
 import { PeekabooContainer } from './with-peekaboo.styles';
 
-const WithPeekaboo = WrappedComponent => {
-    const Peekaboo = ({ interval, isHidden, ...otherProps }) => {
+const WithPeekaboo = (WrappedComponent, interval) => {
+    const Peekaboo = ({ ...otherProps }) => {
+        const [isHidden, setIsHidden ] = useState(false);
+        useEffect( () => {
+            console.log('mounted');
+            setTimeout( () => setIsHidden(!isHidden), interval);
+        }, [isHidden]);
         return (
-            <PeekabooContainer>
+            <PeekabooContainer isHidden={isHidden}>
                 <WrappedComponent {...otherProps} />
             </PeekabooContainer>
         );
