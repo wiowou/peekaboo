@@ -10,4 +10,4 @@ const TheSubtitle = () => {
     );
 }
 
-export default WithPeekaboo(TheSubtitle, 1000);
+export default WithPeekaboo(TheSubtitle);

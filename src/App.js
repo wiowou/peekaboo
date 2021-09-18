@@ -2,6 +2,7 @@ import logo from './logo.svg';
 import './App.css';
 
 import TheSubtitle from './components/the-subtitle/the-subtitle.component';
+import PeekabooIntervalForm from './components/peekaboo-interval-form/peekaboo-interval-form.component';
 
 function App() {
   return (
@@ -9,15 +10,8 @@ function App() {
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
           <TheSubtitle />
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+        <PeekabooIntervalForm />
+      </header> 
     </div>
   );
 }
