@@ -10,3 +10,19 @@ Bonus Points:
 - Wrapper component implementation around the hook to facilitate both use cases.
 
 Please send a GitHub link to your source code. Provide a README with your source code to explain how to run your code.
+
+## usage
+To run the project and see the flashing subtitle text:
+```
+yarn start
+```
+
+To run the simple unit tests:
+```
+yarn test
+```
+
+To show and hide content at a fixed interval, wrap a component in the `WithPeekaboo` function as demonstrated in `src/components/the-subtitle`. Pass an interval in milliseconds.
+
+## how it works
+with-peekaboo is the component. It and its corresponding styles can be found in `src/components/with-peekaboo`.

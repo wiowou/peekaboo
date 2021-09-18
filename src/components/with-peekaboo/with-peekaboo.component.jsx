@@ -9,8 +9,8 @@ const WithPeekaboo = (WrappedComponent, interval) => {
             setTimeout( () => setIsHidden(!isHidden), interval);
         }, [isHidden]);
         return (
-            <PeekabooContainer isHidden={isHidden}>
-                <WrappedComponent {...otherProps} />
+            <PeekabooContainer className='peekaboo' isHidden={isHidden}>
+                { WrappedComponent ? <WrappedComponent {...otherProps} /> : null} 
             </PeekabooContainer>
         );
     };
