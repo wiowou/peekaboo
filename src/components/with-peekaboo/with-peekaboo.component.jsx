@@ -6,7 +6,6 @@ const WithPeekaboo = (WrappedComponent, interval) => {
     const Peekaboo = ({ ...otherProps }) => {
         const [isHidden, setIsHidden ] = useState(false);
         useEffect( () => {
-            console.log('mounted');
             setTimeout( () => setIsHidden(!isHidden), interval);
         }, [isHidden]);
         return (
