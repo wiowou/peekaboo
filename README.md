@@ -12,6 +12,10 @@ Bonus Points:
 Please send a GitHub link to your source code. Provide a README with your source code to explain how to run your code.
 
 ## usage
+Install the necessary modules
+```
+yarn install
+```
 To run the project and see the flashing subtitle text:
 ```
 yarn start
